@@ -1,0 +1,16 @@
+<p>invertir-cadena works!</p>
+
+<form class="needs-validation" (ngSubmit)="onSubmit()" [formGroup]="textForm">
+
+    <div class="form-group" style="width: 20%;">
+        <label class="form-label" for="text" class="h5">Texto a invertir</label>
+        <input type="text" id="text" formControlName="text" class="form-control d-flex">
+    </div>
+    
+    <div class="d-flex flex-row mt-2 justify-content-end">
+        <button type="submit" class="btn btn-link text-decoration-none">Invertir</button>
+    </div>
+</form>
+
+
+<p>{{textoInvertido}}</p>
